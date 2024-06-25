@@ -1,0 +1,329 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+*{
+  font-family: "Inter", sans-serif;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100vw;
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+}
+h1{
+  font-size: 96px;
+  font-weight: 800;
+}
+h2{
+  font-size: 48px;
+  text-align: center;
+  color: var(--black-color);
+  padding-bottom: 50px;
+}
+a{
+  color: var(--white-color);
+  text-decoration: none;
+  cursor: pointer;
+}
+p{
+  font-size: 18px;
+  line-height: 24px;
+  color: var(--black-color);
+}
+ul{
+  list-style: none;
+}
+
+:root{
+  --white-color: #F6F6F6;
+  --green-color: #6B8881;
+  --black-color: #232827;
+}
+
+.container{
+  width: 1382px;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  
+}
+.container:not(.header-container , .footer-container){
+  padding: 50px 0;
+}
+header{
+  background-image: url('../img/haki_light.png');
+  height: 100px;
+  width: 100%;
+}
+
+.header-container, .footer-container{
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--white-color);
+}
+.logo{
+  font-size: 40px;
+  font-weight: 700;
+}
+nav{
+  display: flex;
+  gap: 60px;
+  font-size: 20px;
+}
+
+.nav-item{
+  transition:  0.4s;
+  font-weight: 600;
+}
+
+.header-number{
+  padding-left: 20px;
+  height: 60px;
+  border-left: 2px solid var(--white-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+
+/* hero */
+.hero-section{
+  height: 700px;
+  background-color: var(--green-color);
+  color: var(--white-color);
+}
+.hero-information{
+  max-width: 50%;
+  margin-top: 5%;
+}
+.hero-desc{
+  max-width: 500px;
+  color: var(--white-color);
+}
+
+/* why us */
+
+.dignities{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+.dignity{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.dignity-icon{
+  width: 64px;
+  height: 64px;
+}
+
+.dignity-title{
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.wrapper-line{
+  background-color: var(--green-color);
+  width: 100%;
+  height: 50px;
+}
+
+/* uniform section */
+
+.uniform-list{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: start;
+  justify-content: start;
+  column-gap: 40px;
+  row-gap: 20px;
+}
+.uniform{
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 16px;
+  min-height: 380px;
+  transition: 0.7s;
+}
+
+.uniform-img{
+  height: 320px;
+  background-size: cover;
+  object-fit: cover;
+  background-position: center;
+  cursor: pointer;
+  
+}
+
+.uniform-title{
+  font-weight: 600;
+}
+
+
+
+/* about us */
+
+.about-section{
+  background-color: var(--green-color);
+}
+.about-block{
+  display: flex;
+  background-color: var(--white-color);
+}
+.about-content{
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 60px;
+  width: 50%;
+}
+.about-content h2{
+  text-align: start;
+  padding: 0;
+}
+
+.links-content{
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.link-list-title{
+  font-size: 24px;
+  color: var(--black-color);
+}
+.link-list{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.link{
+  display: flex;
+  align-items: center;
+  flex: 1;
+  gap: 20px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.link-icon{
+  width: 50px;
+  height: 50px;
+}
+.link-title{
+  font-weight: 600;
+}
+.link-link{
+  color: var(--black-color);
+  text-decoration: underline;
+  cursor: pointer;
+}
+.map{
+  width: 50%;
+}
+/* footer */
+footer{
+  height: 150px;
+  background-image: url('../img/haki_dark.png');
+}
+.logo-text{
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.under-logo{
+  font-size: 16px;
+  color: var(--white-color);
+}
+.telegram-number{
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+/* слайдер */
+
+.page-title {
+  text-align: center;
+}
+
+.slider-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.slider {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slider img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.prev-button,
+.next-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 50px;
+  height: 100%;
+  background-color: var(--green-color);
+  border: none;
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+}
+
+.next-button {
+  right: 0px;
+}
+
+.fullscreen {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%) scale(1);
+  width: 80%;
+  height: 80%;
+  object-fit: cover;
+  z-index: 10000;
+  border: 2px solid var(--green-color);
+}
+.slider-text{
+  position: absolute;
+  top: 50%;
+  left: 76%;
+  transform: translate(-50%,-50%);
+  text-align: left;
+  color: var(--black-color);
+  font-weight: 800;
+}
+
+@media (max-width: 1382px) {
+  .container{
+    width: 900px;
+  
+  }
+}
